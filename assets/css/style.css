@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Karla";
+  src: url("../font/Karla-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Italic-Karla";
+  src: url("../font/Karla-Italic-VariableFont_wght.ttf");
+}
+
+/** ---- BASIC ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Karla", sans-serif;
+  font-size: 10px;
+}
+
+img {
+  max-width: 50%;
+}
+
+a {
+  font-family: "Karla";
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #323a45;
+}
+
+h1 {
+  font-family: "Karla";
+  font-size: 2rem;
+  font-weight: bold;
+  color: #323a45;
+}
+
+h2 {
+  font-family: "Karla";
+  font-size: 1.5rem;
+  line-height: 22px;
+}
+
+h3 {
+  font-family: "Karla";
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Karla";
+  font-size: 1.5rem;
+  line-height: 22px;
+
+  color: #848484;
+}
+
+span {
+  font-weight: bold;
+}
