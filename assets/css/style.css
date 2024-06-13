@@ -37,9 +37,10 @@ h1 {
   color: white;
 }
 
-span {
+.textBg {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
+
   color: black;
 }
 
@@ -68,6 +69,7 @@ p {
 }
 
 .pStrong {
+  font-family: "Inter";
   margin-bottom: 20px;
   font-size: 2.9rem;
   font-weight: bold;
@@ -91,7 +93,7 @@ header {
   justify-content: space-between;
   background: black;
 
-  height: 40vh;
+  height: 60vh;
   width: 100%;
 }
 
@@ -128,7 +130,7 @@ header article:nth-of-type(2) {
 
   height: 5vh;
   width: 100%;
-  padding: 5% 10%;
+  padding: 5% 80px;
 }
 
 /** ---- Main Section 1 ---*/
@@ -136,8 +138,8 @@ header article:nth-of-type(2) {
 .mainS1 article:nth-of-type(1) {
   background: black;
 
-  height: 50vh;
-  padding: 50px;
+  height: 70vh;
+  padding: 150px 80px 0 80px;
 }
 
 .mainS1 article:nth-of-type(2) {
@@ -387,7 +389,7 @@ header article:nth-of-type(2) {
   width: 60%;
 }
 
-/** ---- Main Section 5 --- */
+/** ---- Footer --- */
 
 footer {
   display: flex;
@@ -395,26 +397,121 @@ footer {
   background: black;
 
   height: 50vh;
+  overflow: hidden;
 }
 
-footer section {
+/** ---- Footer section 1--- */
+
+.fo1 {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
 
-  width: 50%;
-  padding: 6% 0 0 8%;
+  width: 40%;
+  padding: 50px 30px 0 70px;
 }
 
-footer section p {
-  margin-bottom: 5%;
+.fo1 > p {
+  margin-bottom: 10px;
 }
 
-footer section .pStrong {
+.fo1 > p:nth-of-type(1) {
+  margin: 0 0 -60px 0;
+
+  font-size: 1.2rem;
+}
+
+.fo1 .pStrong {
+  font-size: 2.2rem;
   line-height: 46px;
 }
 
-footer section a {
+.fo1 a {
+  margin-top: -70px;
+
+  height: 50px;
   width: 100px;
-  padding: 5%;
+  padding-top: 10px;
+  font-weight: lighter;
   text-align: center;
+}
+
+.fo1 article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  justify-self: flex-end;
+
+  margin-bottom: -20px;
+  height: 100px;
+}
+
+.fo1 article > p {
+  font-size: 1.2rem;
+}
+
+.fo1 article div {
+  display: flex;
+  margin-bottom: 7px;
+}
+
+.fo1 article div img {
+  margin-right: 5px;
+  height: 20px;
+  width: 20px;
+}
+
+/** ---- Footer section 2 --- */
+
+.fo2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 60%;
+  text-align: center;
+}
+
+.foLine {
+  margin-right: -55px;
+  height: 120px;
+  width: 500%;
+
+  background: white;
+  transform: rotate(45deg);
+}
+
+/* .foLine img {
+  position: absolute;
+  top: -300%;
+  left: 0;
+  z-index: 1;
+
+  transform: rotate(90deg);
+} */
+
+.foLineText {
+  font-size: 9.9rem;
+  color: black;
+
+  animation: arqueeTemxt 15s linear infinite alternate;
+}
+
+@keyframes arqueeTemxt {
+  from {
+    transform: translate(600px, 0px);
+  }
+
+  to {
+    transform: translate(-600px, 0px);
+  }
+}
+
+.foLineText .textBg {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+
+  color: white;
 }
